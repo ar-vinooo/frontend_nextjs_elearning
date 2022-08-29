@@ -7,7 +7,7 @@ export default function Logout() {
 
     useEffect(() => {
         onLogout();
-    }, [])
+    })
 
     async function onLogout() {
         await auth.onLogout()

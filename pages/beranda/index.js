@@ -56,7 +56,7 @@ export default function Beranda() {
                                                 </Skeleton>
                                             </>
                                             :
-                                            kelas.listKelas.map((item) => <Button colorScheme={'blue'} variant={'outline'}>{item.name}</Button>)
+                                            kelas.listKelas.map((item, index) => <Button key={index} colorScheme={'blue'} variant={'outline'}>{item.name}</Button>)
                                     }
                                 </Flex>
                             </Box>

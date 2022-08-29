@@ -26,7 +26,7 @@ export default function CardListPost() {
 
     useEffect(() => {
         getPost()
-    }, [])
+    })
 
     async function getPost() {
         await post.getPost()

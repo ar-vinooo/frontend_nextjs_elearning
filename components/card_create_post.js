@@ -94,7 +94,7 @@ const PilihKelas = ({ value, setKelasId }) => {
     return (
         <Select value={value} placeholder='Pilih Kelas' onChange={(e) => setKelasId(e.target.value)}>
             {
-                kelas.listKelas.map((item) => <option value={item.id}>{item.name}</option>)
+                kelas.listKelas.map((item, index) => <option key={index} value={item.id}>{item.name}</option>)
             }
         </Select>
     )
